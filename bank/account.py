@@ -1,6 +1,6 @@
 
-    def __init__(self, first_name, last_name):
-        self.bank, self.fself.first_name = first_name
+    def __init__(self, first_name, last_name,phone_no,bank): 
+        self.self.first_name = first_name
         self.last_name = last_name
         self.phone_no = phone_no
         self.bank = bank
@@ -19,18 +19,17 @@
         if amount <=0:
         print("You can\'t deposit zero or negative")
 
-       
-    def else:
-            self.balance += amount
-            print("You have deposited {} to {}".format(amount, self.account_name()))
-            return
+        else:
+        self.balance += amount
+        print("You have deposited {} to {}".format(amount, self.account_name()))
+        return
 
     def withdraw(self, amount):
          
         if amount <= 0:
           print("You can\'t withdraw zero or negative")
-          
-       
+        
+
         elif amount > self.balance:
             print("Insufficient funds")
         else:
@@ -42,34 +41,26 @@
         return "The balance for {} is {}".format(self.account_name(), self.balance)
 
 
-    def lend_loan(self, loan):
-      if loan <= 0:
+    def request_loan(self,amount):
+      if amount <= 0:
         print("Invalid request")
         
       else: 
-        self.loan_balance += loan
-        print("{} you have borrowed {}".format(self.account_name(), loan))
+        self.amount = 0
+        print("You have borrowed a loan of {}".format(amount)
       
-    def pay_loan(self, loan):
+    def repay_loan(self, amount):
       if loan <= 0:
         print("Invalid amount to reduce your loan")
-      else:
-        self.loan_balance -= loan
+      elif self.loan == 0
         print(" You have repaid {}".format(loan))
-      
-    def deposit_statement(self, amount):
-      self.deposit(self, amount)
+      elif amount > self.loan
+        print("Your loan balance is {} please enter an amount that is less or equal".format(self.loan))
+      else:
+        self.loan-=amount
+        print("You have paid your loan with {} .Your loan balance is {}"format,self.loan)
 
-      return self.deposit_summary.append(amount)   
     
-    
-    
-    def deposit_statement(self, amount):
-      self.deposit(self, amount)
-      
-      return self.deposit_summary.append(amount)
-         
-     
 acc1 = BankAccount("Noisemaker" ,"Owili",+2567093886720,"Tropical")
 print(acc1.phone_no)
 acc1.deposit(100000)
@@ -83,5 +74,4 @@ acc1.pay_loan(90800)
 print(acc1.getloan_balance())
 print(acc1.deposit_summary())
 
-      
- 
+
