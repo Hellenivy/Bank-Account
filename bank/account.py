@@ -1,5 +1,7 @@
 from datetime import datetime
 
+Class BankAccount
+
     def __init__(self, first_name, last_name,phone_no,bank): 
         self.self.first_name = first_name
         self.last_name = last_name
@@ -88,8 +90,93 @@ from datetime import datetime
         elif amount > self.loan:
             print("Your loan is {} please enter an amount that is less or equal".format(self.loan))
         else:
+            self.loan == amount
+            time ==datetime.now()
+            repayment={
+                "time":time
+                "amount":amount
+            }
             self.loan -= amount
             print("You have repaid you loan with {} your balance is {}".format(amount, self.loan))
+    def repay_loan_statement(self)
+        for repayment in self.loan_repayments:
+            time= repayment["time"] 
+            amount=repayment["amount"]  
+            formated_time=self.get_formatted_time(time) 
+            statement="You repaid {} on {}".format(amount,formated_time)
+            print (statement0
+class BankAccount(Account):           
+    def __init__(self,first_name,last_name,phone_no,bank)
+    self.bank = bank
+    super().__init__(first_name,last_name,phone_no)
+
+class MobileMoneyAccount(Account):
+     def __init__(self,first_name,last_name,phone_no,service_provider)
+     self.service_provider=service_provider
+     self.airtime =[]
+     super().__init__(first_name,last_name,phone_no)
+
+     def buy_airtime(self,amount):
+         try:
+             amount +1
+         except TypeError:
+             print("Please enter amount in figures")
+             return
+        if amount >self.balance:
+            print ("You should have enough balance")
+        else:
+            self.balance-= amount 
+            time =datetime.now()
+            "time":time
+            "airtime":amount
+        }
+        self.airtime.append(airtime) 
+        print("You\'ve bought airtime worth {} on {}".format(amount,self.get_formatted_time(time)))
+        
+class PaySomeBill(Account):
+      def __init__(self,first_name,last_name,pay_bill_number,service_provider)
+      self.service_provider=service_provider
+      self.billl=[]
+      super().__init__(first_name,last_name,pay_bill_number)
+
+      def pay_bill(self,amount):
+          try:
+              amount +1
+              except TypeError:
+                print("Please enter amount figures")
+                return
+        if amount>self.balance:
+            print("Should have enough balance")
+        else:
+            self.balnce -= amount
+            time=datetime.now()
+            "time":time
+            "bill":amount
+        }
+        self.bill.append(bill)
+        print("You\'ve paid bill worth {} on {} to {}".format(amount,self,get_formatted_time(time)))                  
+
+class SendMoneyToAnotherAccount(Account):
+      def __init__(self,first_name,last_name,phone_no,account)
+      self.bank=bank
+      self.amount=[]
+      super().__init__(first_name,last_name,phone_no)
+
+      def send_money(self.amount):
+          try:
+              amount +1
+              except TypeError:
+                  print("Please enter amount in figures")
+        if amount >self.balance:
+            print("You have enough balance")
+        else:
+            self.balance -=amount 
+            time = datetime .now()
+            "time":time
+            "money":amount
+    }
+    self.money.append(money)
+    print ("You\'ve sent {} money to {} on {}".format(amount,self.get_formatted_time(time)))        
 
 acc1 = BankAccount("Noisemaker" ,"Owili",+2567093886720,"Tropical")
 acc1.first_name
