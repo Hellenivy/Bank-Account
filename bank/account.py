@@ -1,6 +1,6 @@
 from datetime import datetime
 
-Class BankAccount
+class Account:
 
     def __init__(self, first_name, last_name,phone_no,bank): 
         self.self.first_name = first_name
@@ -132,12 +132,6 @@ class MobileMoneyAccount(Account):
         }
         self.airtime.append(airtime) 
         print("You\'ve bought airtime worth {} on {}".format(amount,self.get_formatted_time(time)))
-        
-class PaySomeBill(Account):
-      def __init__(self,first_name,last_name,pay_bill_number,service_provider)
-      self.service_provider=service_provider
-      self.billl=[]
-      super().__init__(first_name,last_name,pay_bill_number)
 
       def pay_bill(self,amount):
           try:
@@ -156,11 +150,6 @@ class PaySomeBill(Account):
         self.bill.append(bill)
         print("You\'ve paid bill worth {} on {} to {}".format(amount,self,get_formatted_time(time)))                  
 
-class SendMoneyToAnotherAccount(Account):
-      def __init__(self,first_name,last_name,phone_no,account)
-      self.bank=bank
-      self.amount=[]
-      super().__init__(first_name,last_name,phone_no)
 
       def send_money(self.amount):
           try:
@@ -172,11 +161,22 @@ class SendMoneyToAnotherAccount(Account):
         else:
             self.balance -=amount 
             time = datetime .now()
+            sendmoney{
             "time":time
-            "money":amount
+            "send_money":amount
     }
-    self.money.append(money)
-    print ("You\'ve sent {} money to {} on {}".format(amount,self.get_formatted_time(time)))        
+    self.send_money.append(send_money)
+    print ("You\'ve sent {} money to {} on {}".format(amount,self.get_formatted_time(time)))
+
+      def recieve_money(self,amount):
+          time=datetime.now()
+          recieve_money{
+            "time":time,
+            "recieve_money":amount
+            }
+          self.recieve_money.append(recieve_money)
+          print("You\'ve recieved {} on {} and your new balance is {}".format(amount,get_formated_time(time),self.balance))
+            
 
 acc1 = BankAccount("Noisemaker" ,"Owili",+2567093886720,"Tropical")
 acc1.first_name
